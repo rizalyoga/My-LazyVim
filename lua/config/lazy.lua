@@ -13,14 +13,14 @@ require("lazy").setup({
     {
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
-      opts = {
-        colorscheme = "tokyonight",
-        transparent = true,
-        styles = {
-          sidebars = "transparent",
-          floats = "transparent",
-        },
-      },
+      -- opts = {
+      --   colorscheme = "tokyonight",
+      --   transparent = true,
+      --   styles = {
+      --     sidebars = "transparent",
+      --     floats = "transparent",
+      --   },
+      -- },
     },
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.lang.tailwind" },
@@ -32,7 +32,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.ui.alpha" },
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
-    -- { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.json" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
